@@ -1,0 +1,19 @@
+<h1>User Login Page</h1>
+
+<%= form_with model: @user, url: create_path, method: :post do %>
+  <div>
+    <strong><%= label :email, :email %></strong>
+    <%= text_field :email, placeholder: 'Enter username'%>
+  </div>
+  
+  
+  <div>
+    <strong><%= label :password, :password %></strong>
+    <%= password_field :password, placeholder: 'Enter password'%>
+  </div>
+
+  <div>
+    <%= submit_tag "Sign in"%>
+  </div>
+
+<% end %>

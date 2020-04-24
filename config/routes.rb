@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  root 'users#index'
-  get 'test', to:'users#working_fine'
+  root 'chatrooms#index'
+  get 'login', to: 'sessions#login'
+  get 'logout', to: 'sessions#logout'
+  post 'create', to: 'sessions#create'
 end
