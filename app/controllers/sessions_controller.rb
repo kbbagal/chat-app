@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   def login
-    @user = User.new
+    @user = nil
   end
 
   def create
