@@ -1,19 +1,17 @@
-<div class="ui container">
+<div class="ui container navbar">
   <div class="ui small inverted menu">
-    <a class="active item">
-      Chat Room
-    </a>
+    <%= link_to "Chat Room", chatroom_path, class:"active item" %>
     <a class="item">
       Messages
     </a>
     <div class="right menu">
       <div class="ui dropdown item">
         Account <i class="dropdown icon"></i>
-        <div class="menu">
-          <a class="item">Log In</a>
-          <a class="item">Log Out</a>
-          <a class="item">Sign Up</a>
-        </div>
+          <div class="menu">
+            <%= link_to "Log In", login_path, class:'item' %>
+            <%= link_to "Log Out",logout_path, class: 'item' %>
+            <a class="item">Sign Up</a>
+          </div>
       </div>
       <div class="item">
           <div class="ui primary button">Sign Up</div>

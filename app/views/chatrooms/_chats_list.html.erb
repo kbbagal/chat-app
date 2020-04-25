@@ -1,0 +1,23 @@
+<div class="twelve wide column">
+  <div class="ui fluid raised card chatbox">
+    <div class="content">
+      <div class="ui feed">
+      <% @messages.each do |message| %>
+        <div class="event">
+          <div class="content">
+            <div class="summary">
+              <a><%= message.user.username %></a> sent <a><%= message.body %></a>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      </div>
+    </div>
+    <div class="extra content">
+      <div class="ui fluid icon input">
+        <input type="text" placeholder="What are you up to?">
+        <i class="bordered inverted orange icon edit"></i>
+      </div>
+    </div>
+  </div>    
+</div>
